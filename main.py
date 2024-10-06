@@ -18,4 +18,4 @@ add_fastapi_endpoint(app, sdk, "/copilotkit")
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
